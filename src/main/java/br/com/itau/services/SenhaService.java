@@ -19,5 +19,4 @@ public class SenhaService {
 
         return validator.check(senha);
     }
-
 }
