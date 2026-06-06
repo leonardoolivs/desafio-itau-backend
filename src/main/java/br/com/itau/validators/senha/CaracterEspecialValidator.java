@@ -1,6 +1,6 @@
 package br.com.itau.validators.senha;
 
-import br.com.itau.validator.SenhaValidator;
+import br.com.itau.validators.SenhaValidator;
 
 public class CaracterEspecialValidator extends SenhaValidator {
 
