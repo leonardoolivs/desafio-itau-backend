@@ -204,7 +204,7 @@ Exemplo:
 
 ```json
 {
-  "senha": ""
+  "senha": null
 }
 ```
 
@@ -216,7 +216,7 @@ Resposta:
   "errors": [
     {
       "field": "senha",
-      "message": "Campo obrigatório"
+      "message": "campo obrigatório"
     }
   ]
 }
