@@ -16,13 +16,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/validar")
+@RequestMapping("/senha")
 @Tag(name = "Senha")
 public class SenhaController {
 
     private final SenhaService service;
 
-    @PostMapping
+    @PostMapping("/validacao")
     @Operation(summary = "Validar senha", description = "Retorna 'true' caso a senha atenda todos os critérios e 'false' caso contrário.")
     @ApiResponses({
             @ApiResponse(responseCode = "200", description = "Senha validada com sucesso")
