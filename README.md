@@ -35,28 +35,16 @@ git clone https://github.com/leonardoolivs/desafio-itau-backend
 cd desafio-itau-backend
 ```
 
-### Executar com Maven
-
-```bash
-mvn spring-boot:run
-```
-
 ### Gerar Build
 
 ```bash
 mvn clean package
 ```
 
-O arquivo gerado ficará em:
-
-```text
-target/
-```
-
-### Executar o JAR
+### Executar com Maven
 
 ```bash
-java -jar target/itau-0.0.1-SNAPSHOT.jar
+mvn spring-boot:run
 ```
 
 ### Executando os Testes
@@ -66,6 +54,10 @@ Para executar todos os testes unitários:
 ```bash
 mvn test
 ```
+
+# Endpoints
+
+## Validar Senha
 
 ## Regras de Validação da Senha
 
@@ -93,9 +85,6 @@ Uma senha será considerada válida quando atender **todas** as regras abaixo:
 | "AbTp9 fok" | false     |
 | "AbTp9!fok" | true      |
 
-# Endpoints
-
-## Validar Senha
 
 ### Requisição
 
