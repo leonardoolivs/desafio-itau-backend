@@ -59,6 +59,20 @@ mvn test
 
 ## Validar Senha
 
+### Requisição
+
+```http
+POST /senha/validacao
+```
+
+### Request Body
+
+```json
+{
+  "senha": "AbTp9!fok"
+}
+```
+
 ## Regras de Validação da Senha
 
 Uma senha será considerada válida quando atender **todas** as regras abaixo:
@@ -85,25 +99,10 @@ Uma senha será considerada válida quando atender **todas** as regras abaixo:
 | "AbTp9 fok" | false     |
 | "AbTp9!fok" | true      |
 
-
-### Requisição
-
-```http
-POST /senha/validacao
-```
-
 ### Comportamento
 
 * Retorna `true` quando todas as regras forem atendidas.
 * Retorna `false` quando ao menos uma regra for violada.
-
-### Request Body
-
-```json
-{
-  "senha": "AbTp9!fok"
-}
-```
 
 ### Resposta de Sucesso
 
@@ -247,20 +246,6 @@ Após iniciar a aplicação, a documentação poderá ser acessada através do S
 
 ```text
 http://localhost:8080/swagger-ui.html
-```
-
-# Monitoramento
-
-Endpoints do Spring Actuator disponíveis através de:
-
-```text
-http://localhost:8080/actuator
-```
-
-Health Check:
-
-```text
-http://localhost:8080/actuator/health
 ```
 
 # Arquitetura e Boas Práticas
